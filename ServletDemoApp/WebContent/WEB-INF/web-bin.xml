@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+ <servlet>
+	<servlet-name>add</servlet-name>
+	<servlet-class>com.telusko.AddServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>add</servlet-name>
+	<url-pattern>/add</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>square</servlet-name>
+	<servlet-class>com.telusko.SquareServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>square</servlet-name>
+	<url-pattern>/square</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>myservlet</servlet-name>
+	<servlet-class>com.telusko.MyServlet</servlet-class>
+	
+	<init-param>
+	<param-name>name</param-name>
+	<param-value>LubnaInInit</param-value>
+	</init-param>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>myservlet</servlet-name>
+	<url-pattern>/myservlet</url-pattern>
+</servlet-mapping>
+
+<context-param>
+	<param-name>name</param-name>
+	<param-value>Lubna</param-value>
+</context-param>
+
+<context-param>
+	<param-name>phone</param-name>
+	<param-value>mi</param-value>
+</context-param>
+-->
