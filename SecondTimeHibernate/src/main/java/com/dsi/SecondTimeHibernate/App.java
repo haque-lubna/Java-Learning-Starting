@@ -3,6 +3,7 @@ package com.dsi.SecondTimeHibernate;
 import com.dsi.SecondTimeHibernate.embeddable.Alien;
 import com.dsi.SecondTimeHibernate.embeddable.AlienName;
 import com.dsi.SecondTimeHibernate.mappingRelation.Laptop;
+import com.dsi.SecondTimeHibernate.mappingRelation.Laptop2;
 import com.dsi.SecondTimeHibernate.mappingRelation.Student;
 
 import org.hibernate.Session;
@@ -77,28 +78,33 @@ public class App
 //        tx.commit();
     	
     	//relationa mapping
-    	Laptop laptop = new Laptop();
-    	laptop.setLid(105);
-    	laptop.setLname("dell");
+//    	Laptop laptop = new Laptop();
+//    	laptop.setLid(105);
+//    	laptop.setLname("dell");
+//    	
+//    	Student student = new Student();
+//    	student.setRegno(5);
+//    	student.setName("mon");
+//    	student.setMarks(65);
+//    	student.getLaptop().add(laptop);
+//    	
+//    	laptop.getStudent().add(student);
+//    	
+//    	
+//    	Configuration con = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
+//    	ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
+//    	SessionFactory sf = con.buildSessionFactory(reg);
+//    	Session session = sf.openSession();
+//    	
+//    	Transaction tx = session.beginTransaction();
+//    	session.save(laptop);
+//    	session.save(student);
+//    	
+//    	tx.commit();
     	
-    	Student student = new Student();
-    	student.setRegno(5);
-    	student.setName("mon");
-    	student.setMarks(65);
-    	student.getLaptop().add(laptop);
-    	
-    	laptop.getStudent().add(student);
     	
     	
-    	Configuration con = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
-    	ServiceRegistry reg = new StandardServiceRegistryBuilder().applySettings(con.getProperties()).build();
-    	SessionFactory sf = con.buildSessionFactory(reg);
-    	Session session = sf.openSession();
     	
-    	Transaction tx = session.beginTransaction();
-    	session.save(laptop);
-    	session.save(student);
     	
-    	tx.commit();
     }
 }
